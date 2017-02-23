@@ -4,7 +4,7 @@ The Python script `find_target.py` is a simplified component of the data-mining 
 
 ## Input description
 
-Input for this script are two text files: `input\sentences_nlp352` and `var\target_variables.txt`. The `sentences_nlp352` file comes from the GeoDeepDive library, and it is a TSV file that consists of 5 technical reports from the United States Geological Survey that have been parsed using [Stanford Natural Language Processing](http://nlp.stanford.edu/) (version 3.5.2). 
+Input for this script are two text files: `input\sentences_nlp352` and `var\target_variables.txt`. The `sentences_nlp352` file comes from the GeoDeepDive library, and it is a TSV file that consists of 5 technical reports from the United States Geological Survey that have been parsed using [Stanford Natural Language Processing](http://nlp.stanford.edu/) (version 3.5.2). More information about the sentences table data structure can be found [here](https://github.com/jonhusson/gdd_demo/tree/master/input).
 
 The `var\target_variables.txt` file can (and should!) be altered by the user, and principally consists of Python list of strings called `target_names`. Each object in the list is searched for within the set of five documents using Python's regex module. For example, when downloaded, this file is initialized as:
 
