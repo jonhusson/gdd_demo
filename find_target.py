@@ -93,6 +93,6 @@ with open('./input/sentences_nlp352','r') as fid:
                          target_list.append('\t'.join([docid, sentid, target_word, str(span[0]),str(span[1]), str(target_adj), sent]))
 
 #write the output as tab-separated values
-with open('./output/output', 'w') as f:
+with open('./output/output.tsv', 'w') as f:
     f.write('\n'.join(target_list))
       
