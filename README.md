@@ -16,7 +16,7 @@ The `var\target_variables.txt` file can (and should!) be altered by the user, an
 target_names = ['stromatol', r'\b' + 'Gamuza Formation' + r'\b']
 ```
 
-meaning that words containing the string fragment `stromato` will be returned (i.e., stromatolite, stromatolitic), as well as the phrase `Gamuza Formation`, provided the latter is bound by non-alphanumeric characters (e.g., `TheNotGamuza Formation` will not be returned). This list can be altered to anything you like:
+meaning that words containing the string fragment `stromatol` will be returned (i.e., stromatolite, stromatolitic), as well as the phrase `Gamuza Formation`, provided the latter is bound by non-alphanumeric characters (e.g., `TheNotGamuza Formation` will not be returned). This list can be altered to anything you like:
 
 ```
 target_names = ['Mexico', 'mountain']
