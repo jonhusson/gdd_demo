@@ -8,9 +8,9 @@ Download or clone this repo. The only dependency is Python and its standard modu
 
 ## Input description
 
-Input for `find_target.py` are two text files: `input\sentences_nlp352` and `var\target_variables.txt`. The `sentences_nlp352` file comes from the GeoDeepDive library, and is a TSV file containing 5 technical reports from the United States Geological Survey that have been parsed using [Stanford Natural Language Processing](http://nlp.stanford.edu/) (version 3.5.2). More detailed information about the sentences table data structure can be found [here](https://github.com/jonhusson/gdd_demo/tree/master/input).
+Input for `find_target.py` are two text files: `input/sentences_nlp352` and `var/target_variables.txt`. The `sentences_nlp352` file comes from the GeoDeepDive library, and is a TSV file containing 5 technical reports from the United States Geological Survey that have been parsed using [Stanford Natural Language Processing](http://nlp.stanford.edu/) (version 3.5.2). More detailed information about the sentences table data structure can be found [here](https://github.com/jonhusson/gdd_demo/tree/master/input). You can also view a reference list describing the five included reports [here](https://github.com/jonhusson/gdd_demo/blob/master/input/references.pdf); it is also in the downloaded input folder as `references.pdf`.
 
-The `var\target_variables.txt` file can (and should!) be altered by the user, and principally consists of Python list of strings called `target_names`. Each object in the list is searched for within the set of five documents, using Python's regular expressions module. For example, when downloaded, this file is initialized as:
+The `var/target_variables.txt` file can (and should!) be altered by the user, and principally consists of Python list of strings called `target_names`. Each object in the list is searched for within the set of five documents, using Python's regular expressions module. For example, when downloaded, this file is initialized as:
 
 ```
 target_names = ['stromatol', r'\b' + 'Gamuza Formation' + r'\b']
@@ -27,7 +27,7 @@ target_names = ['Mexico', 'mountain']
 In your Terminal, navigate to the root of the `gdd_demo` directory by typing:
 
 ```
-cd \YOUR\PERSONAL\PATH\gdd_demo
+cd /YOUR/PERSONAL/PATH/gdd_demo
 ```
 
 then type:
@@ -38,7 +38,7 @@ python find_target.py
 
 ## Output description
 
-The result of running `find_target.py` will be written to `output\output.tsv` as tab-delimited text file. Each row consists of a discovery of one of the strings specified in `var\target_variables.txt`.  The columns are described below:
+The result of running `find_target.py` will be written to `output/output.tsv` as tab-delimited text file. Each row consists of a discovery of one of the strings specified in `var/target_variables.txt`.  The columns are described below:
 
 Column | Description 
 -------|--------
