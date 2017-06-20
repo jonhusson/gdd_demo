@@ -59,11 +59,11 @@ Using the provided Python script and some coding (in any language) of your own:
 
 ## Additional Information
 
-I recently added a simple script that seeks to determine the start of the References list in a given GDD document. This information may be helpful, because one may be interested in discarding phrase matches that happen within the reference list or bibliography, focusing only on the main body of the document. To run this extractor, simply type:
+I recently added a simple script that seeks to determine the start of the "References" list in a given GDD document. This information may be helpful, because one may be interested in discarding phrase matches that happen within the reference list or bibliography, focusing only on the main body of the document. To run this extractor, simply type:
 
 ```
 python find_target.py
 ```
 
-The output is written to `output/ref_start.tsv`, and consists of `docid-sentid` tuples. For example, for docid `55adf5cde13823763a830891`, the associated sentid is `2783.` This means that for sentences with sentids less than 2783 are the main body of the text (for that particular document), and sentences with sentids greater than or equal to 2783 are determined to be part of the reference list.
+The output is written to `output/ref_start.tsv`, and consists of `docid-sentid` tuples. For example, for docid `55adf5cde13823763a830891`, the associated sentid is `2783`. This means that for sentences with sentids less than 2783 are the main body of the text (for that particular document), and sentences with sentids greater than or equal to 2783 are determined to be part of the reference list.
 
